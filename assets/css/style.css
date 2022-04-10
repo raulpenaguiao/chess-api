@@ -1,0 +1,120 @@
+/*
+Index
+ -- Box Model Hack
+ -- Clear fix hack
+ - Base styles
+ - Layout
+ -- text
+ - Additional styles
+ -- lists
+ -- nav list
+ -- header layout
+ -- middle section
+ -- volunteer section
+ -- footer
+ -- misc
+ -- links and buttons
+ -- images
+ -- columns
+ */
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+clear: both;
+}
+
+
+.cf:before,
+.cf:after {
+content: "";
+display: table;
+}
+.cf:after {
+clear: both;
+}
+.cf {
+clear: both;
+*zoom: 1;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1 {
+  width: fit-content;
+  margin: 100px auto;
+  font-size: 4.5rem;
+}
+
+
+#display {
+  padding: 10px;
+  width: 1000px;
+  height: 1000px;
+  background-color: bisque;
+  margin: 100px auto;
+  font-size: 3rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+#board {
+  height: 480px;
+  width: 480px;
+  margin: 0px auto;
+}
+.boardSquare {
+  float: left;
+  height: 12.5%;
+  width: 12.5%;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.white {
+  background-color: #f0d0a0;
+}
+
+.black {
+  background-color: #334466;
+}
+
+.white:hover {
+  background-color: #ffdfaf;
+}
+
+.black:hover {
+  background-color: #233456;
+}
+
+
